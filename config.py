@@ -6,7 +6,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'faisalproject'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'CMGsnB46ACwVCQZZUHbgslLOzSrehrqjrIXW4fnu/eoX+znGBcLq8TT16VaUJMSP2H7+VJ4mwqBJ+ASthPgr/g=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'HCAPONxVOUfY4PEPsXbcvfvtgkpaqGKaP43QDay7rjB+8p1kc7g/wED9L5ir6QZ6JUnx7cIoH85V+AStGEMTAw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'project-container'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'project-database-server.database.windows.net'
@@ -30,7 +30,7 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "70ce6afc-b2db-4ff7-949d-73b6131ea714"
+    CLIENT_ID = "f10b0479-b487-4283-805c-c76573ca255e"
 
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
