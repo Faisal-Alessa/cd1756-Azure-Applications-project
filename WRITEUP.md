@@ -15,5 +15,6 @@
 
 ### Assess app changes that would change your decision.
 
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+*Detail how the app and any other needs would have to change for you to change your decision in the last section.*
+ 
 I work as an AI Engineer, if I will deploy an AI solution I will need stronger computing power than what App service provide as a maximum of 14GB of memory and 4 vCPU cores per instance which doesn't serve my AI application.
