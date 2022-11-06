@@ -6,20 +6,20 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'faisalproject'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'HCAPONxVOUfY4PEPsXbcvfvtgkpaqGKaP43QDay7rjB+8p1kc7g/wED9L5ir6QZ6JUnx7cIoH85V+AStGEMTAw=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'XXXXXXXX'
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'project-container'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'project-database-server.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'project-database'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'project-admin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Udacity-'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'XXXXXXXX'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'XXXXXXXX'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "2Vi8Q~1evJMWeTI68tJqR2kP4kMMBrb1Q5Mu_a-Z"
+    CLIENT_SECRET = "XXXXXXXX"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -30,7 +30,7 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "9a8deee7-e634-4ade-b276-01e3c5ad971f"
+    CLIENT_ID = "XXXXXXXX"
 
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
